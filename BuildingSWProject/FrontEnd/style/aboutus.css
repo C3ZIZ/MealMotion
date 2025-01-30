@@ -1,0 +1,69 @@
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #bbb9b9;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  width: 100%; /* Ensure it fills the width */
+  max-width: 1200px; /* Limit max width for readability */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 15px 0;
+  text-align: justify; /* Makes text fill the width evenly */
+}
+
+ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

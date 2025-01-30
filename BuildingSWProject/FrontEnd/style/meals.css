@@ -1,0 +1,146 @@
+.filter, .sort {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.meal-card {
+  width: 300px; /* Increased width from 200px to 300px */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.meal-card img {
+  width: 300px; /* Static width */
+  height: 200px; /* Static height */
+  object-fit: cover; /* Ensures the image is cropped to fit the static size without distortion */
+  border-radius: 8px 8px 0 0;
+}
+
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* Add these to ensure proper layout */
+  align-items: stretch;
+  width: 100%;
+  position: relative;
+}
+
+
+.meal-card h4 {
+  margin: 10px 0;
+}
+
+.popup {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  position: relative;
+  text-align: center;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.popup-content img {
+  width: 300px;  /* Static width */
+  height: 200px; /* Static height */
+  object-fit: cover; /* Ensures the image is cropped to fit the static size without distortion */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* info Section */
+.info {
+  position: relative;
+  padding: 80px 20px;  /* Increased padding for more space */
+  text-align: center;
+  background-color: #000000;
+  margin: 0;
+  width: 100%;
+  height: 250px;  /* Set a fixed height for the section */
+}
+
+.info h2 {
+  font-size: 3rem;  /* Increased font size */
+  margin-bottom: 20px;
+  color: #fff; /* Adjust text color to make it visible on top of the video */
+}
+
+.info p {
+  font-size: 1.2rem;  /* Increased font size */
+  line-height: 1.8;
+  color: #fff;  /* Adjust text color */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; 
+  opacity: 0.45;
+}
+
+.video-background video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px; /* Adds padding around the text */
+}
+
+
+
+.close-btn {
+  position: absolute;
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;  /* Adjust the color to match the design */
+}
+
+.close-btn:hover {
+  color: #f00;  /* Change color on hover */
+}
+
