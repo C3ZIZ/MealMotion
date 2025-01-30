@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM - GYM Exercises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/meals.css">
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CaloriesCalculator.html">Calorie Calculator?</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="info">
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="../img/gympagevid.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <div class="text-content">
+      <h2>GYM Exercises</h2>
+      <p>Push your limits, build muscle, and enhance your overall fitness.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="filter">
+    </div>
+    <div class="sort">
+    </div>
+
+    <div class="meals">
+      <!-- Meal Cards (Dynamic) -->
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">×</span>
+        <div id="popupImage">
+          <img id="popupImageSrc" src="" alt="Meal Image">
+        </div>
+        <h2 id="mealTitle"></h2>
+        <p><strong>Details:</strong> <span id="mealDetails"></span></p>
+        <h3>Video:</h3>
+        <p id="mealVideoLink"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/gymex.js"></script>
+</body>
+
+</html>

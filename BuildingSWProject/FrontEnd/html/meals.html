@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealMotion - Meals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/meals.css">
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CaloriesCalculator.html">Calorie Calculator?</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="info">
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="../img/mealpagevid.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <div class="text-content">
+      <h2>Meals Section</h2>
+      <p>Fuel your body right with balanced meals that provide the energy and nutrients you need to thrive.</p>
+    </div>
+  </section>
+  
+
+  <main>
+    <!-- Filters -->
+    <div class="filter">
+      <label><input type="checkbox" class="meal-type-checkbox" value="breakfast" checked> Breakfast</label>
+      <label><input type="checkbox" class="meal-type-checkbox" value="lunch" checked> Lunch</label>
+      <label><input type="checkbox" class="meal-type-checkbox" value="dinner" checked> Dinner</label>
+    </div>
+
+    <!-- Sorting -->
+    <div class="sort">
+      <label for="sortOption">Sort by:</label>
+      <select id="sortOption">
+        <option value="calories">Calories</option>
+        <option value="protein">Protein</option>
+      </select>
+      <button id="sortHighest">Highest</button>
+      <button id="sortLowest">Lowest</button>
+    </div>
+
+    <!-- Meals -->
+    <div class="meals">
+      <!-- Meal Cards (Dynamic) -->
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">×</span>
+        <div id="popupImage">
+          <img id="popupImageSrc" src="" alt="Meal Image">
+        </div>
+        <h2 id="mealTitle"></h2>
+        <p><strong>Time:</strong> <span id="mealTime"></span></p>
+        <p><strong>Calories:</strong> <span id="mealCalories"></span></p>
+        <h3>Ingredients</h3>
+        <ul id="mealIngredients"></ul>
+        <h3>Instructions</h3>
+        <p id="mealInstructions"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/meals.js"></script>
+</body>
+
+</html>

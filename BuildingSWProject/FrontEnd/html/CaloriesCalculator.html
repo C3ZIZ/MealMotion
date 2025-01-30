@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealMotion - CC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/caloriecalcstyle.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="meals.html">Meals</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 1: Definition -->
+  <section class="info">
+    <h2>What is a Calorie Calculator?</h2>
+    <p>
+      A calorie calculator helps you estimate your daily calorie needs to maintain, lose, or gain weight. 
+      Based on factors like your weight, height, age, gender, and activity level, it calculates how many calories 
+      you should consume every day. This tool is essential for understanding your energy requirements and achieving 
+      your health or fitness goals efficiently.
+    </p>
+  </section>
+
+  <!-- Calculator Form -->
+  <section class="calculator">
+    <h2>Calculate Your Daily Calorie Needs</h2>
+    <p>
+      Fill in the details below to calculate your calorie requirements. Your results will guide you in planning 
+      your meals and achieving a healthier lifestyle.
+    </p>
+
+    <form id="calorieForm">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter your weight" required min="1">
+      
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter your height" required min="1">
+      
+      <label for="age">Age (years):</label>
+      <input type="number" id="age" placeholder="Enter your age" required min="1">
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label for="activityLevel">Activity Level:</label>
+      <select id="activityLevel" required>
+        <option value="" disabled selected>Select activity level</option>
+        <option value="sedentary">Sedentary (little to no exercise)</option>
+        <option value="light">Lightly active (light exercise/sports 1-3 days/week)</option>
+        <option value="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+        <option value="active">Very active (hard exercise/sports 6-7 days a week)</option>
+        <option value="extraActive">Extra active (very hard exercise & physical job)</option>
+      </select>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="result">
+      <h3>Your Daily Calorie Requirement:</h3>
+      <p id="caloriesres">0 kcal</p>
+
+      <h3>Perfect Weight Range:</h3>
+      <p id="weight-range">0 - 0 kg</p>
+
+      <h3>Your Current Mass:</h3>
+      <p id="mass">0</p>
+
+      <h3>Suggested Calorie Deficit to Perfect Weight</h3>
+      <p id="calorie-deficit">0 kcal/day</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 MealMotion. All rights reserved.</p>
+  </footer>
+
+  <script src="../scripts/caloriecalc.js"></script>
+</body>
+</html>
