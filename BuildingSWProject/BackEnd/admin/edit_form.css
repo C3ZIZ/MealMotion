@@ -1,0 +1,59 @@
+.edit-form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.edit-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.edit-form label {
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.edit-form input,
+.edit-form select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.edit-form textarea {
+    min-height: 100px;
+}
+
+
+
+.edit-form .btn {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
